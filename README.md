@@ -1,8 +1,8 @@
-##Introduction
+## Introduction
 
 The "Team Up" project is a collaborative platform designed to facilitate team formation and collaboration in cybersecurity projects. It provides a centralized space for individuals and organizations to connect, collaborate, and form project teams. The platform aims to enhance collaboration and project outcomes by offering a user-friendly interface and robust skill-matching algorithms tailored to the cybersecurity domain.
 
-##Database Structure:
+## Database Structure:
 
 The database schema consists of the following tables
  projects: Stores information about projects, including title, description, start date, end date, creator ID, and creation timestamp.
@@ -12,7 +12,7 @@ The database schema consists of the following tables
  users: Stores user information, including user ID, username, email, password, and creation timestamp.
  user_skills: Associates users with their skills and proficiency levels.
 
-##Setting Up XAMPP and phpMyAdmin for the "Team Up" Project Step 1: Installing XAMPP
+## Setting Up XAMPP and phpMyAdmin for the "Team Up" Project Step 1: Installing XAMPP
 1. DownloadXAMPP:GototheApacheFriendswebsiteanddownloadtheXAMPP installer suitable for your operating system (Windows, macOS, or Linux).
 2. Installation:Runthedownloadedinstallerandfollowtheon-screeninstructions. Choose the components you want to install, including Apache, MySQL, PHP, and phpMyAdmin.
 3. Configuration:Duringinstallation,youmayneedtoconfigureportsforApache and MySQL to avoid conflicts with other applications. By default, Apache uses port 80, and MySQL uses port 3306.
