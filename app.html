@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bard's World</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styling */
+        .thumbnail {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .image-grid {
+            display: flex;
+        }
+
+        .image-display {
+            margin-top: 20px;
+        }
+
+        .calculator {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        #bill-display {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bard's World</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#hobbies">Hobbies & Interests</a></li>
+                    <li><a href="#favorite-pics">Favorite Pics</a></li>
+                    <li><a href="#favorite-video">Favorite Video</a></li>
+                    <li><a href="#career">Career Aspirations</a></li>
+                    <li><a href="#javascript-app">JavaScript App</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about-me" class="container">
+            <h2>About Me</h2>
+            <p>Hi there! I'm Bard, a large language model created by Google AI. I am still under development, but I have learned to perform many kinds of tasks, including
+                <ul>
+                    <li>I will try my best to follow your instructions and complete your requests thoughtfully.</li>
+                    <li>I will use my knowledge to answer your questions in a comprehensive and informative way, even if they are open ended, challenging, or strange.</li>
+                    <li>I will generate different creative text formats,  like poems, code, scripts, musical pieces, email, letters, etc. I will try my best to fulfill all your requirements.</li>
+                </ul>
+            </p>
+        </section>
+        <section id="hobbies" class="container">
+            <h2>Hobbies & Interests</h2>
+            <p>Although I am a large language model, I can access and process information from the real world through Google Search and keep my response consistent with search results. Here are some hobbies that people often enjoy:</p>
+            <ul>
+                <li>Reading</li>
+                <li>Playing video games</li>
+                <li>Coding</li>
+                <li>Watching movies or TV shows</li>
+                <li>Listening to music</li>
+                <li>Spending time with friends and family</li>
+            </ul>
+        </section>
+        <section id="favorite-pics" class="container">
+            <h2>Favorite Pics</h2>
+            <div class="image-grid">
+                <img src="image1.jpg" alt="Picture 1" class="thumbnail" onclick="displayImage('image1.jpg')">
+                <img src="image2.jpg" alt="Picture 2" class="thumbnail" onclick="displayImage('image2.jpg')">
+                <img src="image3.jpg" alt="Picture 3" class="thumbnail" onclick="displayImage('image3.jpg')">
+                <img src="image4.jpg" alt="Picture 4" class="thumbnail" onclick="displayImage('image4.jpg')">
+            </div>
+            <div class="image-display">
+                <iframe id="image-display-frame" src="" frameborder="0"></iframe>
+            </div>
+        </section>
+        <section id="favorite-video" class="container">
+            <h2>Favorite Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section id="career" class="container">
+            <h2>Career Aspirations</h2>
+            <p>As a large language model, I am constantly learning and evolving. My goal is to assist users with their questions and requests to the best of my ability, using the knowledge and information that I have been trained on.</p>
+        </section>
+        <section id="javascript-app" class="container">
+            <h2>Campus Dunkin Bill Calculator</h2>
+            <div class="calculator">
+                <label for="tax">Tax Percentage (%)</label>
+                <input type="number" id="tax" value="5">
+                <label for="meal-price">Meal Price ($)</label>
+                <input type="number" id="meal-price" value="20">
+                <label for="tip">Tip Percentage (%)</label>
+                <input type="number" id="tip" value="10">
+                <button onclick="calculate()">Calculate</button>
+                <div id="bill-display"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="#">Back to Top</a>
+        </div>
+    </footer>
+    <script>
+        function displayImage(imageSrc) {
+            document.getElementById("image-display-frame").src = imageSrc;
+        }
+
+        function calculate() {
+            var tax = parseFloat(document.getElementById("tax").value);
+            var mealPrice = parseFloat(document.getElementById("meal-price").value);
+            var tip = parseFloat(document.getElementById("tip").value);
+
+            var totalTax = (tax / 100) * mealPrice;
+            var totalTip = (tip / 100) * mealPrice;
+            var totalBill = mealPrice + totalTax + totalTip;
+
+            document.getElementById("bill-display").innerHTML = "Total Bill: $" + totalBill.toFixed(2);
+        }
+    </script>
+</body>
+</html>
