@@ -12,7 +12,8 @@ The "Team Up" project is a collaborative platform designed to facilitate team fo
  5. users: Stores user information, including user ID, username, email, password, and creation timestamp.
  6. user_skills: Associates users with their skills and proficiency levels.
 
-## Setting Up XAMPP and phpMyAdmin for the "Team Up" Project Step 1: Installing XAMPP
+## Setting Up XAMPP and phpMyAdmin for the "Team Up" Project 
+Step 1: Installing XAMPP
 1. DownloadXAMPP:GototheApacheFriendswebsiteanddownloadtheXAMPP installer suitable for your operating system (Windows, macOS, or Linux).
 2. Installation:Runthedownloadedinstallerandfollowtheon-screeninstructions. Choose the components you want to install, including Apache, MySQL, PHP, and phpMyAdmin.
 3. Configuration:Duringinstallation,youmayneedtoconfigureportsforApache and MySQL to avoid conflicts with other applications. By default, Apache uses port 80, and MySQL uses port 3306.
