@@ -31,10 +31,12 @@ empty.
  - If you have a database schema file (SQL file), click on the "Import" tab.
  - Choose your SQL file containing the schema for the projects, project_members, project_skills, skills, users, and user_skills tables.
  -Click "Go" to import the schema into your teamup database.
-4. Configuring the Project
+ Configuring the Project
 - DatabaseConnection
  - Open the db_connection.php file in your project's directory.
  - Update the database connection details ($servername, $username,$password, $database) to match your XAMPP MySQL settings.
+   ![IMG_8B09E7A3672E-1](https://github.com/crymansqua/TeamUp/assets/62740032/4aabdf45-f4be-4a80-ab99-fec489e17fb2)
+
 
 ## Database Connection
 The database connection file (db_connection.php) establishes a connection to the MySQL database using the provided credentials. If the connection fails, an error message is displayed.
