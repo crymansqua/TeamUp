@@ -20,18 +20,18 @@ Step 1: Installing XAMPP
 4. StartServices:Onceinstalled,starttheApacheandMySQLservicesfromthe XAMPP control panel. Ensure that both services are running.
 
  Step 2: Setting Up the Database for "Team Up"
-- AccessingphpMyAdmin
+1. AccessingphpMyAdmin
  - Open your web browser and navigate to http://localhost/phpmyadmin.
  - Log in using the default username root and leave the password field
 empty.
-- CreatingtheDatabase
+2.  CreatingtheDatabase
  - Click on the "Databases" tab in phpMyAdmin.
  - Enter a name for your database, such as teamup, and click "Create".
--  ImportingDatabaseSchema
+3. ImportingDatabaseSchema
  - If you have a database schema file (SQL file), click on the "Import" tab.
  - Choose your SQL file containing the schema for the projects, project_members, project_skills, skills, users, and user_skills tables.
  -Click "Go" to import the schema into your teamup database.
-Configuring the Project
+4. Configuring the Project
 - DatabaseConnection
  - Open the db_connection.php file in your project's directory.
  - Update the database connection details ($servername, $username,$password, $database) to match your XAMPP MySQL settings.
