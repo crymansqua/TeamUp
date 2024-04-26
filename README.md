@@ -40,19 +40,19 @@ empty.
 The database connection file (db_connection.php) establishes a connection to the MySQL database using the provided credentials. If the connection fails, an error message is displayed.
 ## User Interface
 The user interface of the "Team Up" platform provides intuitive navigation for users to perform various tasks:
-● Dashboard: Users can view and manage their projects, invitations, and profile settings from the dashboard.
-● Project Creation: Users can create new projects by providing a title, description, start date, and end date.
-● Skill Matching: When creating a project, users can specify the required skills and proficiency levels.
-● User Profile: Users can create and update their profiles, including their skills and proficiency levels.
+- Dashboard: Users can view and manage their projects, invitations, and profile settings from the dashboard.
+- Project Creation: Users can create new projects by providing a title, description, start date, and end date.
+- Skill Matching: When creating a project, users can specify the required skills and proficiency levels.
+- User Profile: Users can create and update their profiles, including their skills and proficiency levels.
 Step 4: Testing the Project
 1. AccessingtheApplication:
-● Open your web browser and navigate to http://localhost/teamup or the
+- Open your web browser and navigate to http://localhost/teamup or the
 appropriate URL where your project is located.
-● Ensure that the application loads without errors.
+- Ensure that the application loads without errors.
 2. FunctionalityTesting
-● Test various functionalities of the "Team Up" platform, such as creating
+- Test various functionalities of the "Team Up" platform, such as creating
 projects, adding members, and matching skills.
-● Verify that data is being stored and retrieved correctly from the MySQL
+- Verify that data is being stored and retrieved correctly from the MySQL
 database.
 
  We are using PHP mailer composer to send confirmation mail on
