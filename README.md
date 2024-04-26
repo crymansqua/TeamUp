@@ -1,16 +1,16 @@
 ## Introduction
 
-The "Team Up" project is a collaborative platform designed to facilitate team formation and collaboration in cybersecurity projects. It provides a centralized space for individuals and organizations to connect, collaborate, and form project teams. The platform aims to enhance collaboration and project outcomes by offering a user-friendly interface and robust skill-matching algorithms tailored to the cybersecurity domain.
+The "Team Up" project is a collaborative platform designed to facilitate team formation and collaboration. It provides a centralized space for individuals and organizations to connect, collaborate, and form project teams. The platform aims to enhance collaboration and project outcomes by offering a user-friendly interface and robust skill-matching algorithms.
 
 ## Database Structure:
 
-The database schema consists of the following tables
- projects: Stores information about projects, including title, description, start date, end date, creator ID, and creation timestamp.
- project_members: Maps project IDs to user IDs, indicating which users are members of each project.
- project_skills: Links projects to specific skills required for each project, including the proficiency level required for each skill.
- skills: Contains a list of skills along with their IDs and names.
- users: Stores user information, including user ID, username, email, password, and creation timestamp.
- user_skills: Associates users with their skills and proficiency levels.
+# The database schema consists of the following tables:
+ 1. projects: Stores information about projects, including title, description, start date, end date, creator ID, and creation timestamp.
+ 2. project_members: Maps project IDs to user IDs, indicating which users are members of each project.
+ 3. project_skills: Links projects to specific skills required for each project, including the proficiency level required for each skill.
+ 4. skills: Contains a list of skills along with their IDs and names.
+ 5. users: Stores user information, including user ID, username, email, password, and creation timestamp.
+ 6. user_skills: Associates users with their skills and proficiency levels.
 
 ## Setting Up XAMPP and phpMyAdmin for the "Team Up" Project Step 1: Installing XAMPP
 1. DownloadXAMPP:GototheApacheFriendswebsiteanddownloadtheXAMPP installer suitable for your operating system (Windows, macOS, or Linux).
