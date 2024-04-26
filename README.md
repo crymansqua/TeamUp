@@ -4,6 +4,7 @@ The "Team Up" project is a collaborative platform designed to facilitate team fo
 
 ## Database Structure:
 
+
 # The database schema consists of the following tables:
  1. projects: Stores information about projects, including title, description, start date, end date, creator ID, and creation timestamp.
  2. project_members: Maps project IDs to user IDs, indicating which users are members of each project.
@@ -60,3 +61,4 @@ database.
  We are using PHP mailer composer to send confirmation mail on
 registration. Before running the website you must set your credentials
 here:
+![IMG_0CFC828680F3-1](https://github.com/crymansqua/TeamUp/assets/62740032/134c430d-6896-40cf-85ed-060cfb3a07f6)
