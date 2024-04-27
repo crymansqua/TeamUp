@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
     
     
-    <style>
+<style>
         
 /* Unique CSS for styling the page */
 
@@ -143,7 +143,7 @@
         include 'db_connection.php'; // Include your database connection file
 
         if (!isset($_SESSION['email'])) {
-            header("Location: login.php");
+            header("Location: index.php");
             exit();
         }
 
@@ -558,6 +558,34 @@
                 </div>
             </div>
         </div>
+        <!-- User Resume Display Container -->
+        <div class="row gy-4">
+            <div class="col-md-12 col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">My Resume</h4>
+                    </div>
+                    <div class="card-body">
+                    <?php
+                $stmt = $conn->prepare("SELECT resume_path FROM users WHERE email = ?");
+                $stmt->bind_param("s", $email);
+                $stmt->execute();
+                $stmt->bind_result($resume_location);
+                $stmt->fetch();
+                $stmt->close();
+if($resume_location != NULL){
+  echo "<tr><td colspan='4'><a href='$resume_location'>Click to View RESUME</a></td></tr>";
+}else{
+                // Output a link to the resume file
+                echo "<tr><td colspan='4'><span  style='color: red;'>NO RESUME UPLOADED!</span></td></tr>";
+}
+
+                ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
 </div>
 

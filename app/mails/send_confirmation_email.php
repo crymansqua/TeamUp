@@ -16,13 +16,13 @@ function sendConfirmationEmail($to, $recipient_name)
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // SMTP server
         $mail->SMTPAuth   = true; // Enable SMTP authentication
-        $mail->Username   = ''; // SMTP username (your Gmail email address)
-        $mail->Password   = ''; // SMTP password (your Gmail password)
+        $mail->Username   = 'mail@example.com'; // SMTP username (your Gmail email address)
+        $mail->Password   = 'your mail app password'; // SMTP password (your Gmail password)
         $mail->SMTPSecure = 'tls'; // Enable TLS encryption; `ssl` also accepted
         $mail->Port       = 587; // TCP port to connect to
 
         // Sender and recipient settings
-        $mail->setFrom('', 'Team Up');
+        $mail->setFrom('mail@exampl.com', 'Team Up');
         $mail->addAddress($to, $recipient_name);
 
         // Content

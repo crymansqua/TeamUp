@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 sendConfirmationEmail($email, $username);
 
                 // Redirect to login page
-                header("location: login.php");
+                header("location: index.php");
             } else {
                 echo "Oops! Something went wrong. Please try again later.";
             }

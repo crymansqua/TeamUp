@@ -27,6 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Move the uploaded file to the destination directory
             if (move_uploaded_file($_FILES["resume"]["tmp_name"], $file_path)) {
+                $email = $_SESSION['email'];
+                $stmt = $conn->prepare("UPDATE users SET resume_path = ? WHERE email = ?");
+                $stmt->bind_param("ss", $file_path,$email);
+                $stmt->execute();
+                $stmt->close();    
                 // Extract text from the uploaded file
                 $resumeText = extractTextFromResume($file_path);
 
